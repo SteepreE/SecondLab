@@ -19,7 +19,11 @@ namespace SecondLab
 
         private void СalculateButton_Click(object sender, EventArgs e)
         {
-            
+            String equation = EquationInputBox.Text;
+
+            int result = Calculator.Calculate(equation);
+
+            MessageBox.Show("Результат: " + result);
         }
     }
 }
