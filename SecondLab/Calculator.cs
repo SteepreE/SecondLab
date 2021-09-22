@@ -13,10 +13,10 @@ namespace SecondLab
 
             String[] elems = str.Split('+', '-');
             result = int.Parse(elems[0]);
-            for (int i = 0; i < elems.Length; i++)
+            for (int i = 1; i < elems.Length; i++)
             {
                 int value = int.Parse(elems[i]);
-                result = (i % 1 == 0) ? result + value : result - value;
+                result = (i % 2 == 1) ? result + value : result - value;
             }
 
             return result;
