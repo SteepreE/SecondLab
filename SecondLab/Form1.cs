@@ -16,5 +16,10 @@ namespace SecondLab
         {
             InitializeComponent();
         }
+
+        private void СalculateButton_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
